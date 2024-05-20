@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Hoorah</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="./app.js"></script>
+    <div class="container">
+        <div class="left">
+            <div id="header">
+                <h1 id="header1" >Welcome, Aryan</h1>
+            </div>
+            <div id="form">
+                <form id="input-form" onsubmit="return false;">
+                    <input type="text" id="name-input" placeholder="Enter name">
+                    <span id="entry-count">0/10</span>
+                    <button type="button" onclick="addName()">Add</button>
+                </form>
+            </div>
+            <button id="submit-all-button" onclick="submitAll()">Submit All</button>
+        </div>
+        <div id="table">
+            <h2 class="table-title">Crush List</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tbody id="name-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
